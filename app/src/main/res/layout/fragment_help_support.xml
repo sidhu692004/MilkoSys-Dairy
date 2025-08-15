@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9"
+    android:padding="16dp">
+
+    <!-- Help & Support Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHelpSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="12dp"
+        android:backgroundTint="#FFFFFF">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <!-- Title -->
+            <TextView
+                android:text="Help &amp; Support"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvSupportDescription"
+                android:text="MilkoSys Dairy is designed especially for dairy owners to simplify daily operations. With this app, you can easily manage milk collection, customer records, product entries, and billing in a digital and professional way. Our goal is to make your dairy management faster, smarter, and hassle-free. If you face any issues or need assistance, feel free to reach us via call or email."
+                android:textSize="15sp"
+                android:textColor="#555"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp" />
+
+
+            <!-- Call Button -->
+            <Button
+                android:id="@+id/btnCallSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:text="Call Support"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:backgroundTint="#27AE60"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="15dp"
+                android:drawablePadding="10dp" />
+
+            <!-- Email Button -->
+            <Button
+                android:id="@+id/btnEmailSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:text="Email Support"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:backgroundTint="#2980B9"
+                android:textColor="#FFFFFF"
+                android:drawablePadding="10dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
