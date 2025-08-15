@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/featureIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_dashboard" />
+
+    <TextView
+        android:id="@+id/featureTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black" />
+</LinearLayout>

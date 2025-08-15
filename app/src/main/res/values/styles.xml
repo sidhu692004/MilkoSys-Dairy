@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Custom popup menu style -->
+    <style name="CustomPopupMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

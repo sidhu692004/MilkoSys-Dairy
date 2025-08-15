@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base dark theme -->
+    <style name="Base.Theme.MilkoSysDairy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme colors here -->
+        <!-- Example: -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <!-- Popup menu style for dark mode -->
+        <item name="popupMenuStyle">@style/CustomPopupMenuDark</item>
+    </style>
+
+    <!-- Dark mode popup menu -->
+
+
+</resources>
