@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("org.jetbrains.kotlin.plugin.compose")
     id("com.google.gms.google-services") version "4.4.0"
-    id("kotlin-kapt")
 }
 
 android {
@@ -37,7 +36,6 @@ android {
     }
     buildFeatures {
         compose = true
-        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.4"
@@ -45,13 +43,6 @@ android {
 }
 
 dependencies {
-    implementation("androidx.recyclerview:recyclerview:1.3.1")
-    implementation("com.github.bumptech.glide:glide:4.16.0")
-//    implementation(libs.firebase.firestore.ktx)
-    kapt("com.github.bumptech.glide:compiler:4.16.0")
-
-    // Image picker (optional easy library)
-    implementation("com.github.dhaval2404:imagepicker:2.1")
     // Core Android libraries
     implementation(libs.androidx.core.ktx)
     implementation("androidx.appcompat:appcompat:1.6.1")
